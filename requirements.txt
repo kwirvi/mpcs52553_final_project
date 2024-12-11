@@ -8,3 +8,7 @@ bcrypt ~= 3.1.7
 flask-bcrypt ~= 0.7.1
 pyjwt ~= 1.7.1
 flask_jwt_extended ~= 3.24.1
+
+# Added the following - they are within the scope of class learnings.
+Flask==2.3.2
+Werkzeug==2.3.3

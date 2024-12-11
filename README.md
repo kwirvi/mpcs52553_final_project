@@ -1,3 +1,33 @@
+
+
+Belay is a Slack clone with simplified functionality. 
+To run the app, do the following: 
+1. If you don't have belay.sqlite3, create an empty one. 
+2. Make sure sqlite3 is installed on your device, then run the SQL migration : 
+sqlite3 belay.sqlite3 < db/20241207T1230-create_tables.sql
+*Note: if using powershell, you may have to run these commands instead: 
+sqlite3 belay.sqlite3
+.read migrations/2024-12-10-000000_create_tables.sql
+.exit
+3. Run the following command in terminal: 
+flask run 
+* Note: you may need to run the following command first: export FLASK_APP=app
+4. Open the the app in your browser (http://127.0.0.1:5000/)
+
+
+To use the app: 
+Register a new account or login with your existing username and password.
+
+
+Resources used: 
+I used ChatGPT to help me with almost every file. 
+I also used the following websites/courses: 
+https://www.udemy.com/course/the-complete-web-development-bootcamp
+https://react.dev/ (and other resources provided during class, like Flask)
+https://werkzeug.palletsprojects.com/en/stable/utils/#:~:text=Security%20Helpers-,werkzeug.security,-.generate_password_hash
+
+
+Original instructions below:
 # Final Project: Belay (a Slack clone)
 
 40 points

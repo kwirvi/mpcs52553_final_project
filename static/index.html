@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-container">
+        <h1>Welcome to Belay</h1>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button id="login-button">Login</button>
+        <p>New here? <a href="#" id="register-link">Register</a></p>
+    </div>
+
+    <!-- Registration Screen -->
+    <div id="register-container" class="hidden">
+        <h1>Create an Account</h1>
+        <input type="text" id="reg-username" placeholder="Username">
+        <input type="password" id="reg-password" placeholder="Password">
+        <button id="register-button">Register</button>
+        <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+    </div>
+
+    <!-- Main Application Container -->
+    <div id="main-container" class="hidden">
+        <!-- Top navigation bar on narrow screens -->
+        <div id="top-nav" class="hidden">
+            <button id="show-channels">Channels</button>
+            <span id="current-channel-name"></span>
+            <button id="show-profile-menu">Profile</button>
+        </div>
+
+        <aside id="channels-list">
+            <h2>Channels</h2>
+            <ul id="channels"></ul>
+            <button id="create-channel">New Channel</button>
+            <div id="profile-actions">
+                <h3>Profile</h3>
+                <input type="text" id="new-username" placeholder="New Username">
+                <button id="update-username-button">Update Username</button>
+                <input type="password" id="new-password" placeholder="New Password">
+                <button id="update-password-button">Update Password</button>
+                <button id="logout-button">Logout</button>
+            </div>
+        </aside>
+
+        <main id="messages-view">
+            <h2 id="channel-name">Select a Channel</h2>
+            <div id="messages"></div>
+            <div id="message-input-area">
+                <input type="text" id="new-message" placeholder="Type your message">
+                <button id="send-message">Send</button>
+            </div>
+        </main>
+
+        <!-- Thread Panel -->
+        <aside id="thread-view" class="hidden">
+            <h2>Thread</h2>
+            <div id="thread-parent-message"></div>
+            <div id="thread-messages"></div>
+            <div id="thread-input-area">
+                <input type="text" id="new-reply" placeholder="Reply...">
+                <button id="send-reply">Send</button>
+            </div>
+            <button id="close-thread">&times;</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

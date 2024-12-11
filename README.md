@@ -7,7 +7,7 @@ To run the app, do the following:
 sqlite3 belay.sqlite3 < db/20241207T1230-create_tables.sql
 *Note: if using powershell, you may have to run these commands instead: 
 sqlite3 belay.sqlite3
-.read migrations/2024-12-10-000000_create_tables.sql
+.read db/20241207T1230-create_tables.sql
 .exit
 3. Run the following command in terminal: 
 flask run 

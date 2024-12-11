@@ -20,7 +20,7 @@ Register a new account or login with your existing username and password.
 
 
 Resources used: 
-I used ChatGPT to help me with almost every file. 
+I used ChatGPT to help me with javascript debugging, organization, and the structure/style of the application.  
 I also used the following websites/courses: 
 https://www.udemy.com/course/the-complete-web-development-bootcamp
 https://react.dev/ (and other resources provided during class, like Flask)
